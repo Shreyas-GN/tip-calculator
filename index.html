@@ -5,15 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tip Calculator</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="calculator">
-    <h2>Tip Calculator</h2>
-    <input type="number" id="bill" placeholder="Bill Amount" />
-    <input type="number" id="tip" placeholder="Tip %" />
+  <main class="container">
+    <h1 class="title">💸 Tip Calculator</h1>
+
+    <div class="input-group">
+      <label for="bill">Bill Amount ($)</label>
+      <input type="number" id="bill" placeholder="e.g. 100.00" />
+    </div>
+
+    <div class="input-group">
+      <label for="tip">Tip Percentage (%)</label>
+      <input type="number" id="tip" placeholder="e.g. 15" />
+    </div>
+
     <button onclick="calculateTip()">Calculate</button>
-    <div id="result"></div>
-  </div>
+
+    <div id="result" class="result hidden">
+      <h2>Result</h2>
+      <p><strong>Tip:</strong> <span id="tipAmount">$0.00</span></p>
+      <p><strong>Total:</strong> <span id="totalAmount">$0.00</span></p>
+    </div>
+
+    <footer>
+      <p>Built with ❤️ using HTML, CSS, and JavaScript</p>
+    </footer>
+  </main>
+
   <script src="script.js"></script>
 </body>
 </html>
