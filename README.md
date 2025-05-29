@@ -1,17 +1,29 @@
 # Tip Calculator
 
-Calculates tip amount and total bill.
+A beautiful and responsive tip calculator that helps users calculate tip amount and total bill based on the entered amount and tip percentage.
 
-## Tech
+## 💡 Features
+- Modern and clean UI
+- Mobile responsive
+- Realtime result display
+- Input validation and error handling
+
+## 🛠️ Tech Stack
 - HTML
-- CSS
-- JavaScript
+- CSS (Flexbox, Transitions)
+- JavaScript (DOM Manipulation)
 
-## How to Use
-Input the bill and tip percentage, and it calculates the tip and total bill.
+## 🚀 How to Use
+1. Enter the bill amount (e.g. `100`)
+2. Enter the tip percentage (e.g. `15`)
+3. Click "Calculate"
+4. View the tip and total bill instantly!
 
-### Example
-- Bill: 100
-- Tip %: 15
-- Tip: $15.00
-- Total: $115.00
+## 📷 Screenshot
+(Insert screenshot here once deployed or locally captured)
+
+## 📦 Setup
+Simply open `index.html` in any browser. No dependencies needed.
+
+## 🌐 Live Demo
+[Coming Soon or Your GitHub Pages Link]
