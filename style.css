@@ -1,41 +1,97 @@
+/* Reset & font */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
+  font-family: 'Inter', sans-serif;
+  background-color: #f7f9fb;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding: 40px 20px;
+  min-height: 100vh;
 }
 
-.calculator {
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+/* Container */
+.container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 300px;
 }
 
-input {
+/* Title */
+.title {
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #2c3e50;
+}
+
+/* Inputs */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.input-group label {
   display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  margin-bottom: 8px;
+  color: #555;
 }
-
-button {
+.input-group input {
   width: 100%;
   padding: 10px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
   font-size: 16px;
 }
 
-#result {
-  margin-top: 20px;
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #45a049;
+}
+
+/* Result Box */
+.result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f1f8e9;
+  border: 1px solid #c5e1a5;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.result h2 {
+  margin-bottom: 10px;
+  color: #388e3c;
+}
+.result p {
   font-size: 18px;
+  margin: 8px 0;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaa;
 }
